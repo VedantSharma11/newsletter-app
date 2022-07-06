@@ -4,8 +4,7 @@
 }
 body{
  background-color: rgb(204, 204, 204);
- padding: 10px;
- overflow: hidden;
+ padding: 0 10px;
 }
 .containerr{
   display: flex;
