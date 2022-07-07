@@ -33,11 +33,11 @@ app.post("/", function(req,res){
 //coverting data object from parse form to collapsed string form
     const jsondata= JSON.stringify(data);
 
-    const url="https://us9.api.mailchimp.com/3.0/lists/d28f6c67cc";
-
+    const url="https://us9.api.mailchimp.com/3.0/lists/{enter your own list/audience id}"; //enter your list/audience id by signing up on mailchimp
+                                                                                  // in the url where it is written us9 the number 9 will be replaced by number which is in your generated api
     const options={
         method: "POST",
-        auth:"vedant:f91ec3f973eae8221b0b83c8ca8959d4-us9"
+        auth:"vedant:<enter your api key>"   // enter your api key here after generating it on mailchimp
     }
 
     const request= https.request(url, options, function(response){
